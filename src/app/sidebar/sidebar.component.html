@@ -1,0 +1,14 @@
+<button class="burger-button" *ngIf="!sidebarOpen" (click)="sidebarOpen=true"><img src="../../assets/img/bars.svg"
+    width="30px" height="30px"></button>
+<div *ngIf="sidebarOpen" class="sidebar">
+  <div class="sidebar-content">
+    <div class="header">
+      <h1>Bienvenue à l'EPSI !</h1>
+      <button class="close" (click)="sidebarOpen=false"><img src="../../assets/img/times.svg" width="30px" height="30px"></button>
+    </div>
+    <ul *ngFor="let menuItem of menuItems" class="list">
+      <label class="list-title">{{menuItem.label}}</label>
+      <li *ngFor="let item of menuItem.listItems" class="list-item"><a href="">{{item}}</a></li>
+    </ul>
+  </div>
+</div>

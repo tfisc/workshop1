@@ -1,0 +1,64 @@
+.sidebar{
+    display: flex;
+    color:white;
+    background-color: #241746;
+    position: absolute;
+    height: 100%;
+    width:20%;
+    left:-8px;
+    top:-8px;
+    opacity: 0.8;
+    text-align: center;
+}
+.sidebar-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    font-size:0.75vw;
+    display:flex;
+    flex-direction: row;
+    }
+
+h1{
+    display: block;
+}
+button{
+    display: block;
+    outline: none;
+    
+}
+.close{
+    background-color:  #241746;
+    border:none;
+    padding-right: 5%;
+}
+.burger-button{
+    margin-top: 5%;
+    margin-left:5%;
+    border:none;
+    background-color: white;
+}
+.list-item{
+    padding-left: 10%;
+    display: block;
+    margin-bottom: 5px;
+}
+.list-title{
+    margin-bottom: 5%;
+}
+.list{
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: left;
+   margin-bottom: 5%;
+}
+a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+      color: green;
+  }

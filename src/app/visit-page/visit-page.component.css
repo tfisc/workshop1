@@ -1,0 +1,26 @@
+.page-content{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:20%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    display:block
+}
+.image{
+    display:flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left:auto;
+    width:800px;
+    height:400px;
+    background-color: black;
+}
+.arrow-top{
+    margin-top: 1%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

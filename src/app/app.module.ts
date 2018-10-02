@@ -11,7 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     HomepageComponent
   ],
   imports: [
-    BrowserModule,MatButtonModule, MatCheckboxModule
+    BrowserModule,MatButtonModule, MatCheckboxModule,MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

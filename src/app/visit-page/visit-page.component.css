@@ -5,6 +5,7 @@
     display:flex;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 h1{
     display:block
@@ -14,13 +15,26 @@ h1{
     flex-direction: column;
     margin-right: auto;
     margin-left:auto;
-    width:800px;
-    height:400px;
+    width:1000px;
+    height:800px;
     background-color: black;
 }
 .arrow-top{
+    position: absolute;
     margin-top: 1%;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    z-index: 100;
+}
+
+.panorama {
+    position: relative;
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+.test{
+    height: 100%;
 }

@@ -13,8 +13,8 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
 
-  menuItems: object[] = [{ 'label': "Batiment A", "listItems": ["Menu item 1", "Menu item 2", "Menu item 3"] },
-  { 'label': "Batiment B", "listItems": ["Menu item 1", "Menu item 2"] }
+  menuItems: object[] = [{ 'label': "Batiment Croix Verte", "listItems": ["Vue extérieur","Parking", "Vue intérieur", "BDE","Cafétéria","Salle de cours"] },
+  { 'label': "Batiment Apothicaire", "listItems": ["My DIL", "L'incubateur"] }
 
   ]
 

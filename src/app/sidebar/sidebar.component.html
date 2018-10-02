@@ -1,8 +1,9 @@
 <div class="sidebar">
   <div class="sidebar-content">
     <div class="header">
-      <h1>Bienvenue à l'EPSI !</h1>
-      <button class="close" (click)="sidebarOpen=false"><img src="../../assets/img/times.svg" width="30px" height="30px"></button>
+      <img id='logo' src='../../assets/img/logo.svg'>
+      
+      <button class="close" (click)="sidebarOpen=false"><img id='burger'src="../../assets/img/times.svg" width="30px" height="30px"></button>
     </div>
     <ul *ngFor="let menuItem of menuItems" class="list">
       <label class="list-title">{{menuItem.label}}</label>

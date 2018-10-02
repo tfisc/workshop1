@@ -1,5 +1,6 @@
 .sidebar{
-    display: flex;
+    font-family: Raleway;
+    display: block;
     color:white;
     background-color: #241746;
     position: absolute;
@@ -9,6 +10,10 @@
     top:-8px;
     opacity: 0.8;
     text-align: center;
+    border-right:solid;
+    border-right-width: 2px;
+    border-right-color: yellow;
+    
 }
 .sidebar-content{
     margin-top: 5%;
@@ -22,7 +27,8 @@
     }
 
 h1{
-    display: block;
+    margin-left:15px;
+    display: inline-block;
 }
 button{
     display: block;
@@ -63,3 +69,15 @@ a {
   a:hover{
       color: green;
   }
+#logo{
+    width: 40%;
+    height: 40%;
+  
+    margin-left :15px;
+    background-color: #241746;
+    
+}
+
+#burger{
+    display:none;
+}

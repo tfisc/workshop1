@@ -4,13 +4,14 @@ h1{
     font-family:Raleway;
     margin-left: 20%;
     color:whitesmoke;
-   
+    animation: 1s ease-out 0s 1 onload;
 }
 
 button{
     background-color:#fdce37; 
     color:#241746;
     display:block;
+    animation: 1s ease-out 0s 1 onload;
 }
 .buttoncontainer{
     
@@ -42,18 +43,32 @@ button{
     border: 1px solid #555;
   }
 img{
+  
     display: block;
     width: 70%;
     height: 70%;
-   
+    animation: 1s ease-in 0s 1 onload;
 }
 #mainimage{
+  
     width: 80%;
 justify-content: center;
     display: flex;
     margin-left: 20%;
     margin-bottom: 5%;
     margin-top: 5%;
+    opacity:1;
   
 }
+
+@keyframes onload {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
 

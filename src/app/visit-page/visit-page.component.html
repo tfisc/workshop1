@@ -21,13 +21,21 @@ pannellum.viewer('panorama', {
     title="Inline Frame Example"
     width="1000"
     height="600"
-    [src]='"getPathPanoramaByID()"'
-    >
+    src='../../../1/index.html'>
 </iframe>
+
+<!--
+<script>
+    document.getElementById("inlineFrameExample").src =getPathPanoramaByID();
+</script>-->
 
 <div class="description">
     <p>{{retourneObjetListePiece(listePieces,CurrentPiece).description}}</p>
   </div>
+
+<script>
+  document.querySelector('#1-exterieurbatiment').click();
+</script>
   </div>
 
   

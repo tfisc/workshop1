@@ -189,7 +189,17 @@
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+
+    const event = new CustomEvent('changeScene', {
+      buble : true,
+      detail: { scene: scene }
+    });
+    //On envoie l'event
+    window.parent.dispatchEvent(event);
   }
+
+  
+
 
   function updateSceneName(scene) {
     sceneNameElement.innerHTML = sanitize(scene.data.name);

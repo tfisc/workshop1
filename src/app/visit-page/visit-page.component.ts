@@ -14,6 +14,7 @@ export class VisitPageComponent implements OnInit {
   ngOnInit() {
       //Event au changement de la scène
       window.addEventListener('changeScene', (e)=> {
+        console.log("e['detail'].scene.data.name : " + e['detail'].scene.data.name);
         switch (e['detail'].scene.data.name) {
           case "salleDeCours":
            this.dataService.currentBuilding=0;

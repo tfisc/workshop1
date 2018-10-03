@@ -12,8 +12,9 @@
     text-align: center;
     border-right:solid;
     border-right-width: 2px;
-    border-right-color: yellow;
+    border-right-color: #fdce37;
     
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .sidebar-content{
     margin-top: 5%;
@@ -70,14 +71,36 @@ a {
       color: green;
   }
 #logo{
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 45%;
   
     margin-left :15px;
     background-color: #241746;
     
 }
+#logo:hover{
+    animation-duration: 0.5s;
+    animation-name: scaler;
+}
 
 #burger{
     display:none;
 }
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaler {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+  }

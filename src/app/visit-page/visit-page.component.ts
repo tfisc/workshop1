@@ -128,5 +128,22 @@ export class VisitPageComponent implements OnInit {
       console.log("../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html");
       return "../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html";
     }
+ 
     
+    TestClickJS()
+    {
+      console.log("Je fonctionne");
+      
+      console.log( this.getElementByXpath("//div[@id='sceneList']/ul/a[2]/li") );
+      
+      var element = this.getElementByXpath("//div[@id='sceneList']/ul/a[2]/li");
+      element.click();
+    }
+
+    getElementByXpath(path) {
+      return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    }
+    
+    
+
 }

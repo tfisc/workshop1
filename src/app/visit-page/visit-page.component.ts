@@ -121,6 +121,11 @@ export class VisitPageComponent implements OnInit {
 
     ]
 
-    
+
+    getPathPanoramaByID()
+    {
+      console.log("../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html");
+      return "../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html";
+    }
 
 }

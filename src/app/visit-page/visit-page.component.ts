@@ -130,15 +130,7 @@ export class VisitPageComponent implements OnInit {
     }
  
     
-    TestClickJS()
-    {
-      console.log("Je fonctionne");
-      
-      console.log( this.getElementByXpath("//div[@id='sceneList']/ul/a[2]/li") );
-      
-      var element = this.getElementByXpath("//div[@id='sceneList']/ul/a[2]/li");
-      element.click();
-    }
+  
 
     getElementByXpath(path) {
       return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;

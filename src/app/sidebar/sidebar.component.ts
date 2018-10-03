@@ -18,5 +18,12 @@ export class SidebarComponent implements OnInit {
 
   ]
 
+  getPath( i :number){
+    if(i===0){
+      return "/visit"
+    }else{
+      return ""
+    }
+  }
 
 }

@@ -7,7 +7,9 @@
     </div>
     <ul *ngFor="let menuItem of menuItems" class="list">
       <label class="list-title">{{menuItem.label}}</label>
-      <li *ngFor="let item of menuItem.listItems" class="list-item"><a routerLink="/visit" routerLinkActive="active">{{item}}</a></li>
+      <li *ngFor="let item of menuItem.listItems ; let i = index" class="list-item"><a routerLink="/visit"
+          routerLinkActive="active">{{item}}</a></li>
     </ul>
+    <a routerLink="/homePage" routerLinkActive="active">Retour à l'accueil</a>
   </div>
 </div>

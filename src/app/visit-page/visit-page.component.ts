@@ -13,17 +13,17 @@ export class VisitPageComponent implements OnInit {
 
   ngOnInit() {
 
+    //Event au changement de la scène
+    window.addEventListener('changeScene', function (e) {console.log(e);});
     function fait_piece(nNomPiece,nDescription,nCoordX, nCoordY) {
       this.nomPiece = nNomPiece;
       this.description = nDescription;
       this.coordX = nCoordX;
       this.coordY = nCoordY;
-
-      
     }
 
 
-    
+
   //  var listePieces = new Array(7);
     //listePieces[0] = new fait_piece("VueBatimentCroixVerte","Le batiment croix verte est situé 1027 rue de la croix verte.",0,0);
     //listePieces[1] = new fait_piece("EntreeBatimentCroixVerte","Nous voyons ici l'entrée des artistes !",0,1);
@@ -47,10 +47,10 @@ export class VisitPageComponent implements OnInit {
         return objet_a_retourner;
       }
 
-/*   listePieces: object[] = 
+/*   listePieces: object[] =
   [{ 'id': "1", "listePiece": ['nomPiece' : "VueBatimentCroixVerte", "Menu item 2", "Menu item 3"] },
     { 'label': "Batiment B", "listItems": ["Menu item 1", "Menu item 2"] }
-  
+
     ] */
     CurrentPiece = {'building':0,'coord_x':0,'coord_y':0};
 
@@ -128,5 +128,5 @@ export class VisitPageComponent implements OnInit {
       console.log("../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html");
       return "../../../"+this.retourneObjetListePiece(this.listePieces,this.CurrentPiece).id+"/index.html";
     }
-    
+
 }

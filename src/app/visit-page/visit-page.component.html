@@ -1,18 +1,38 @@
 <div class="page-content">
   <div class="image">
     <h1>{{retourneObjetListePiece(listePieces,CurrentPiece).piece}}</h1>
-    <div class="panorama">
-      <iframe width="1000px" height="800px" allowfullscreen style="border-style:none;" src="../../assets/img/testNils.jpg"></iframe>
-      <!-- <img class="test" src="../../assets/img/panoramaTest.jpg"  /> -->
-      <img class="arrow-top" src="../../assets/img/arrow-up.svg" height="30px" width="30px">
-    </div>
     
-      <!-- <img class="arrow-top" src="../../assets/img/arrow-up.svg" height="30px" width="30px">
-      <img class="arrow-left" src="../../assets/img/arrow-left.svg" height="30px" width="30px">
-      <img class="arrow-down" src="../../assets/img/arrow-down.svg" height="30px" width="30px">
-      <img class="arrow-right" src="../../assets/img/arrow-right.svg" height="30px" width="30px"> -->
-    </div>
     <div class="description">
       <p>{{retourneObjetListePiece(listePieces,CurrentPiece).description}}</p>
     </div>
+
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 300px;
+        height: 200px;
+    }
+    </style>
+
+    
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://pannellum.org/images/alma.jpg"
+});
+</script>
+
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1000"
+    height="800"
+    src="../../../TestPanorama/index.html">
+</iframe>
+
   </div>
+
+  

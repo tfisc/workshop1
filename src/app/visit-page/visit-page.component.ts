@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from '../data-service.service';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataServiceService) { }
 
   ngOnInit() {
 
@@ -37,7 +38,7 @@ export class VisitPageComponent implements OnInit {
         var objet_a_retourner = listePieces_i[0];
         for(var i=0;i<listePieces_i.length;i++)
         {
-          if(listePieces_i[i].building == currentPiece.building && listePieces_i[i].coord_x == currentPiece.coord_x && listePieces_i[i].coord_y == currentPiece.coord_y)
+          if(listePieces_i[i].building == this.dataService.currentBuilding && listePieces_i[i].coord_x == this.dataService.currentX && listePieces_i[i].coord_y == this.dataService.currentY)
           {
             objet_a_retourner = listePieces_i[i];
           }
@@ -55,32 +56,32 @@ export class VisitPageComponent implements OnInit {
     listePieces :object[] =[
       {
         'id' : 1,
-        'piece' : 'Extérieure du batiment Croix-Verte',
-        'description': 'Vue extérieure du batiment Croix-Verte',
+        'piece' : 'Extérieur du batiment Croix-Verte',
+        'description': 'Vue extérieur du batiment Croix-Verte',
         'building':0,
         'coord_x':0,
         'coord_y':0
       },
       {
         'id' : 2,
-        'piece' : 'Entrée du batiment Croix-Verte',
-        'description': 'Vue de l\'entrée du batiment Croix-Verte',
+        'piece' : 'Parking du batiment Croix-Verte',
+        'description': 'Vue du parking du batiment Croix-Verte',
         'building':0,
         'coord_x':0,
         'coord_y':1
       },
       {
         'id' : 3,
-        'piece' : 'Hall d\'entrée du batiment Croix-Verte',
-        'description': 'Hall d\'entrée du batiment Croix-Verte',
+        'piece' : 'Vue intérieur du batiment croix verte',
+        'description': 'Vue intérieur du batiment croix verte',
         'building':0,
         'coord_x':0,
         'coord_y':2
       },
       {
         'id' : 4,
-        'piece' : 'HautEscalierCroixVerte',
-        'description': '1er étage du batiment Croix-Verte',
+        'piece' : 'BDE',
+        'description': "BDE de l'EPSI",
         'building':0,
         'coord_x':0,
         'coord_y':3

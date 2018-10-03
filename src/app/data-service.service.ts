@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class DataServiceService {
 
-  currentBuilding: number ;
-  currentX: number;
-  currentY: number;
+  currentBuilding: number=0;
+  currentX: number=0;
+  currentY: number=0;
 
   constructor() { }
 }

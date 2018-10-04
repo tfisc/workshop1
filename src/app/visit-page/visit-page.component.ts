@@ -173,7 +173,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 11,
       'piece': 'Administration',
-      'description': 'Administration',
+      'description': 'C\'est ici que se trouve les bureaux du service administration.',
       'building': 1,
       'coord_x': -1,
       'coord_y': 1

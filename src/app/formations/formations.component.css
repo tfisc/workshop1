@@ -4,7 +4,7 @@
     justify-content: flex-start;
 }
 .p{
-    
+
     text-align: center;
     justify-content: flex-start;
     animation-name: onload;
@@ -21,6 +21,7 @@ h1{
     display:flex;
     width:100%;
     animation: 1s ease-in-out slideInFromTop;
+    
 }
 
 img{

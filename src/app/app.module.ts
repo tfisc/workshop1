@@ -11,6 +11,7 @@ import { VisitPageComponent } from './visit-page/visit-page.component';
 const appRoutes: Routes = [
   { path: 'visit', component: VisitPageComponent },
   { path: 'homePage', component: HomepageComponent },
+  { path: 'formation', component: HomepageComponent },
   { 
     path: '',
    redirectTo: 'homePage',

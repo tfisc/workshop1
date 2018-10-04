@@ -56,7 +56,7 @@ export class VisitPageComponent implements OnInit {
               this.dataService.currentX=-1;
               this.dataService.currentY=1;
                break;
-               case "MYDIL":
+               case "myDil":
                this.dataService.currentBuilding=1;
                this.dataService.currentX=0;
                this.dataService.currentY=2;
@@ -86,11 +86,14 @@ export class VisitPageComponent implements OnInit {
 
   CurrentPiece = { 'building': 0, 'coord_x': 0, 'coord_y': 0 };
 
+  //description_2 = 'Le bâtiment Croix-Verte de l\'EPSI possède un parking permettant aux étudiants, enseignants et intervenants de se garer facilement. \n';
+  
+
   listePieces: object[] = [
     {
       'id': 1,
       'piece': 'Extérieur du batiment Croix-Verte',
-      'description': 'Vue extérieur du batiment Croix-Verte',
+      'description': 'Ce bâtiment annexe de l\'EPSI est idéalement situé, à 5 minutes à pied du bâtiment principal situé 437 Avenue des Apothicaires. \n\r Il possède notamment une cafétéria, le bureau des étudiants (BDE) et plusieurs salles de cours.',
       'building': 0,
       'coord_x': 0,
       'coord_y': 0
@@ -98,7 +101,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 2,
       'piece': 'Parking du batiment Croix-Verte',
-      'description': 'Vue du parking du batiment Croix-Verte',
+      'description': 'Le bâtiment Croix-Verte de l\'EPSI possède un parking permettant aux étudiants, enseignants et intervenants de se garer facilement.',
       'building': 0,
       'coord_x': 0,
       'coord_y': 1
@@ -106,7 +109,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 3,
       'piece': 'Haut escalier batiment croix verte',
-      'description': 'Vue intérieur du batiment croix verte',
+      'description': 'Ici nous sommes au coeur du bâtiment, en effet sur la droite se trouve la cafétéria, derrière nous le bureau des étudiants et sur la gauche les différentes salles de cours.',
       'building': 0,
       'coord_x': 0,
       'coord_y': 2
@@ -130,7 +133,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 6,
       'piece': 'Cafétaria du batiment Croix-Verte',
-      'description': 'Cafétaria du batiment Croix-Verte',
+      'description': 'Nous voilà dans la cafétéria, c\'est ici que l\'on peut prendre un café le matin à la machine automatique ou bien se détendre autour d\'une partie de babyfoot. \r\n Des tables sont également présentes si l\'on souhaite travailler ici. \r\n Il y a aussi un point qui a son importance, nous avons ici un accès aux toilettes.',
       'building': 0,
       'coord_x': -2,
       'coord_y': 3
@@ -146,7 +149,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 8,
       'piece': 'Salle de cours Croix-Verte',
-      'description': 'Salle de cours Croix-Verte',
+      'description': 'Nous sommes ici dans l\'une des salles de cours de ce bâtiment. Vous pouvez justement nous apercevoir sur cette photo en train de travailler sur ce site internet ! {Rajouter ici les différents programme de l\'epsi ? http://www.epsi.fr/programmes/panorama-des-etudes/}',
       'building': 0,
       'coord_x': 1,
       'coord_y': 4

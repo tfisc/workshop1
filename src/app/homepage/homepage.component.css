@@ -1,11 +1,12 @@
 h1{
-    font-size: 20;
     text-align: center;
-    font-family:Raleway;
+    justify-content: center;
+    display:flex;
+    width:80%;
     margin-left: 20%;
-    color:whitesmoke;
-    animation: 1s ease-out 0s 1 onload;
+    animation: 1s ease-in-out slideInFromTop;
 }
+
 
 button{
     background-color:#fdce37; 
@@ -75,3 +76,11 @@ justify-content: center;
 
 
 
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

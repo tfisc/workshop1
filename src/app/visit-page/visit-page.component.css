@@ -8,7 +8,11 @@
     color: white;
 }
 h1{
-    display:block
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    width:100%;
+    animation: 1s ease-in-out slideInFromTop;
 }
 .image{
     display:flex;
@@ -34,6 +38,16 @@ h1{
     overflow-y: hidden;
     
 }
+
+
 .test{
     height: 100%;
 }
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

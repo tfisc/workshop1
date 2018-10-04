@@ -1,0 +1,60 @@
+.page-content{
+    margin-left:20%;
+}
+.header{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+button{
+    display: block;
+    width:30%;
+    background-color:#fdce37; 
+    color:#241746;
+    border: none;
+    height: 40px;
+    font-size: 2.2vh;
+}
+.button-container{
+    margin-top: 10%;
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.form{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.perso-info{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+input{
+    width: 80%;
+    height: 3vh;
+    border: none;
+    border-radius: 3px;
+    margin-bottom:3%;
+    background-color: lightgray;
+}
+.message-input{
+    height: 20vh;
+}
+label{
+    margin-bottom: 1%;
+}
+.message{
+    margin-left:36%;
+    margin-bottom: 5%;
+}
+.submit{
+    display: inline-block;
+    margin-left: 30%;
+}
+.validated{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20%;
+}

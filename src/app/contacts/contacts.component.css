@@ -9,12 +9,16 @@
 button{
     display: block;
     width:30%;
-    background-color:#fdce37; 
+    background-color:#fdce37;
     color:#241746;
     border: none;
     height: 40px;
     font-size: 2.2vh;
 }
+button:hover{
+  cursor: pointer
+}
+
 .button-container{
     margin-top: 10%;
     display:flex;

@@ -20,6 +20,9 @@ button{
     margin-left: 20%;
     justify-content:space-between;
 }
+a{
+    text-decoration: none;
+}
 #btapo{
     align-content: center;
     width:250px;
@@ -30,7 +33,7 @@ button{
 
 #btcv{
     align-content: center;
-    width:250px;
+    width:80%;
     height: 50px;
     font-size: 18px;
     margin-left: 10%;

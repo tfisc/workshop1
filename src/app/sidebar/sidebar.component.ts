@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
   currentX;
   currentY;
 
-  menuItems: object[] = [{ 'label': "Navigation 3D", "route":"/visit"  },{ 'label': "Formations", "route":"/formations"  }
+  menuItems: object[] = [{ 'label': "Navigation 3D", "route":"/visit"  },{ 'label': "Formations", "route":"/formations" },{ 'label': "Contacts", "route":"/contacts"  }
   ]
 
   

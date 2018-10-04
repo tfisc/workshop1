@@ -62,7 +62,7 @@ export class VisitPageComponent implements OnInit {
                this.dataService.currentY=2;
                 break;
 
-    
+
           default:
             break;
         }
@@ -70,9 +70,9 @@ export class VisitPageComponent implements OnInit {
   }
 
   ngAfterViewChecked(){
-  
+
   }
-  
+
 
   retourneObjetListePiece(listePieces_i) {
     var objet_a_retourner = listePieces_i[0];
@@ -87,7 +87,7 @@ export class VisitPageComponent implements OnInit {
   CurrentPiece = { 'building': 0, 'coord_x': 0, 'coord_y': 0 };
 
   //description_2 = 'Le bâtiment Croix-Verte de l\'EPSI possède un parking permettant aux étudiants, enseignants et intervenants de se garer facilement. \n';
-  
+
 
   listePieces: object[] = [
     {
@@ -157,7 +157,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 9,
       'piece': 'Exterieur batiment apothicaire',
-      'description': 'Exterieur batiment apothicaire',
+      'description': 'Ce bâtiment est le principal du campus. Nous pourrons notamment y retrouver des salles de cours, le MyDIL ainsi que l\'adminitration.',
       'building': 1,
       'coord_x': 0,
       'coord_y': 0
@@ -165,7 +165,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 10,
       'piece': 'Interieur batiment apothicaire',
-      'description': 'Interieur batiment apothicaire',
+      'description': 'Ceci est l\'intérieur du bâtiment apothicaire. Nous pouvons rejoindre le MyDIL ainsi que l\'adminitration à partir d\'ici.',
       'building': 1,
       'coord_x': 0,
       'coord_y': 1
@@ -189,6 +189,6 @@ export class VisitPageComponent implements OnInit {
 
   ]
 
-  
+
 
 }

@@ -190,8 +190,7 @@
     updateSceneName(scene);
     updateSceneList(scene);
 	
-	
-    const event = new CustomEvent('changeScene', {
+	 const event = new CustomEvent('changeScene', {
       buble : true,
       detail: { scene: scene }
     });

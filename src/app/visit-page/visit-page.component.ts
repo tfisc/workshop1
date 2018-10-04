@@ -56,7 +56,7 @@ export class VisitPageComponent implements OnInit {
               this.dataService.currentX=-1;
               this.dataService.currentY=1;
                break;
-               case "myDil":
+               case "MYDIL":
                this.dataService.currentBuilding=1;
                this.dataService.currentX=0;
                this.dataService.currentY=2;

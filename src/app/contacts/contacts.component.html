@@ -1,0 +1,165 @@
+<div class="page-content">
+  <div *ngIf="!formulairePage">
+    <div class="header">
+      <h1>Formulaire de contact</h1>
+
+      <p>Que vous soyez un professionnel désirant établir un partenariat avec l'EPSI, ou un futur étudiant désirant
+        rejoindre une de nos formations, vous pouvez nous contacter à l'aide de ce formulaire.</p>
+    </div>
+    <div class="button-container">
+      <button (click)="professional=!professional; student=false;">Vous êtes un professionnel ?</button>
+      <button (click)="student=!student; professional=false;">Vous voulez étudier chez nous ?</button>
+    </div>
+
+    <br><br>
+
+    <div class="form" *ngIf="professional">
+      <div class="perso-info">
+        <label>
+          Nom
+        </label>
+        <input type="text" required>
+
+
+        <label>
+          Prénom
+        </label>
+        <input type="text">
+
+
+        <label>
+          Adresse Mail
+        </label>
+        <input type="text">
+
+
+        <label>
+          Numéro de téléphone personnel
+        </label>
+        <input type="text">
+
+        <label>
+          Votre message
+        </label>
+        <input class="message-input" type="text">
+      </div>
+
+
+      <div class="perso-info">
+        <label>
+          Nom de l'entreprise
+        </label>
+        <input type="text">
+
+
+        <label>
+          Adresse Mail de l'entreprise
+        </label>
+        <input type="text">
+
+
+        <label>
+          Adresse de l'entreprise
+        </label>
+        <input type="text">
+
+
+        <label>
+          Ville
+        </label>
+        <input type="text">
+
+
+        <label>
+          Code postal
+        </label>
+        <input type="text">
+
+      </div>
+
+    </div>
+    <button *ngIf="professional" class="submit" (click)="formulairePage=true">Envoyer</button>
+
+
+
+
+    <div class="form" *ngIf="student">
+      <div class="perso-info">
+        <label>
+          Nom
+        </label>
+        <input type="text" required>
+
+
+        <label>
+          Prénom
+        </label>
+        <input type="text">
+
+
+        <label>
+          Adresse Mail
+        </label>
+        <input type="text">
+
+
+        <label>
+          Numéro de téléphone
+        </label>
+        <input type="text">
+
+
+        <label>
+          Adresse
+        </label>
+        <input type="text">
+
+
+        <label>
+          Ville
+        </label>
+        <input type="text">
+
+
+        <label>
+          Code postal
+        </label>
+        <input type="text">
+
+      </div>
+
+      <div class="perso-info">
+        <label>Quelle formation vous intéresse ?</label>
+        <select type="text">
+          <option>EPSI</option>
+          <option>WIS</option>
+        </select>
+
+        <label>Quelle année vous intéresse ?</label>
+        <select type="text">
+          <option>Bachelor 1</option>
+          <option>Bachelor 2</option>
+          <option>Bachelor 3</option>
+          <option>Ingénierie 4</option>
+          <option>Ingénierie 5</option>
+        </select>
+
+
+        <label>
+          Décrivez vos motivations
+        </label>
+        <input type="text">
+
+      </div>
+
+
+
+    </div>
+    <button *ngIf="student"  (click)="formulairePage=true" class="submit">Envoyer</button>
+  </div>
+  <div class="validated" *ngIf="formulairePage">
+   <div class="message">Votre Message a bien été envoyé</div>
+    <button routerLink="/homePage"
+    routerLinkActive="active" class="submit">Retour a l'accueil</button>
+  </div>
+</div>

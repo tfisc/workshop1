@@ -4,7 +4,6 @@
       <img routerLink="/homePage" routerLinkActive="active" id='logo' src='../../assets/img/logo.svg'><a routerLink="/homePage" routerLinkActive="active"></a>
     </div>
     <ul class="list">
-      <label class="list-title">{{menuItem}}</label>
       <li *ngFor="let item of menuItems ; let i = index" class="list-item" (click)="itemInfo(i)"><a routerLink={{item.route}}
           routerLinkActive="active">{{item.label}}</a></li>
     </ul>

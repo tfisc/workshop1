@@ -3,8 +3,8 @@
     display: inline-block;
     color:white;
     background-color: #241746;
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     width:20%;
     left:-8px;
     top:-8px;
@@ -12,14 +12,12 @@
     border-right:solid;
     border-right-width: 2px;
     border-right-color: #fdce37;
-    
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .sidebar-content{
-    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    height: 100%;
 }
 .header{
     font-size:0.75vw;
@@ -49,23 +47,29 @@ button{
 }
 .list-item{
     padding-left: 10%;
-    display: block;
+    display: flex;
+    margin-top:5px;
     margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: normal ;
 }
 .list-title{
     margin-bottom: 5%;
+    font-size: 18px;
 }
 .list{
    list-style-type: none;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   text-align: left;
+   text-align: center;
    margin-bottom: 5%;
+   margin-top: 5%;
 }
 a {
     text-decoration: none;
     color: white;
+    
   }
   a:hover{
       color: green;
@@ -76,9 +80,11 @@ a {
 #logo{
     width: 50%;
     height: 45%;
-  
-    margin-left :15px;
+    margin-top: 10%;
+    margin-left :20%;
+    margin-bottom: 10%;
     background-color: #241746;
+  
     
 }
 #logo:hover{
@@ -88,6 +94,13 @@ a {
 
 #burger{
     display:none;
+}
+
+.Retour{
+    list-style-type: none;
+    justify-content: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @keyframes slideInFromLeft {

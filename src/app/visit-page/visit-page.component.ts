@@ -56,7 +56,7 @@ export class VisitPageComponent implements OnInit {
               this.dataService.currentX=-1;
               this.dataService.currentY=1;
                break;
-               case "MYDIL":
+               case "myDil":
                this.dataService.currentBuilding=1;
                this.dataService.currentX=0;
                this.dataService.currentY=2;
@@ -85,6 +85,9 @@ export class VisitPageComponent implements OnInit {
   }
 
   CurrentPiece = { 'building': 0, 'coord_x': 0, 'coord_y': 0 };
+
+  //description_2 = 'Le bâtiment Croix-Verte de l\'EPSI possède un parking permettant aux étudiants, enseignants et intervenants de se garer facilement. \n';
+  
 
   listePieces: object[] = [
     {

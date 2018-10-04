@@ -165,7 +165,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 10,
       'piece': 'Interieur batiment apothicaire',
-      'description': 'Interieur batiment apothicaire',
+      'description': 'Ceci est l\'intérieur du bâtiment apothicaire. Nous pouvons rejoindre le MyDIL ainsi que l\'adminitration à partir d\'ici.',
       'building': 1,
       'coord_x': 0,
       'coord_y': 1
@@ -173,7 +173,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 11,
       'piece': 'Administration',
-      'description': 'Administration',
+      'description': 'C\'est à cet étage que ce trouve l\'administration.',
       'building': 1,
       'coord_x': -1,
       'coord_y': 1

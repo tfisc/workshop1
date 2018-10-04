@@ -1,0 +1,58 @@
+.page-content{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:20%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    width:100%;
+    animation: 1s ease-in-out slideInFromTop;
+}
+.image{
+    display:flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left:auto;
+    width:1000px;
+    height:800px;
+}
+.arrow-top{
+    position: absolute;
+    margin-top: 1%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+
+.panorama {
+    position: relative;
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+
+.test{
+    height: 100%;
+}
+
+.descriptionMYDIL{
+    text-align: left;
+    margin-left: 10%;
+}
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

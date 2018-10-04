@@ -1,0 +1,50 @@
+.page-content {
+    margin-left: 20%;
+    text-align: center;
+    justify-content: flex-start;
+}
+.p{
+
+    text-align: center;
+    justify-content: flex-start;
+    animation-name: onload;
+    animation-duration: 2s;
+
+}
+li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    width:100%;
+    animation: 1s ease-in-out slideInFromTop;
+    
+}
+
+img{
+    animation-name: onload;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes onload {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+

@@ -1,6 +1,15 @@
 .page-content{
     margin-left:20%;
 }
+
+h1{
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    width:100%;
+    animation: 1s ease-in-out slideInFromTop;
+}
+
 .header{
     width: 80%;
     text-align: center;
@@ -9,22 +18,30 @@
 button{
     display: block;
     width:30%;
-    background-color:#fdce37; 
+    background-color:#fdce37;
     color:#241746;
     border: none;
     height: 40px;
     font-size: 2.2vh;
 }
+button:hover{
+  cursor: pointer
+}
+
 .button-container{
     margin-top: 10%;
     display:flex;
     width: 100%;
     justify-content: space-around;
+    animation-name: onload;
+    animation-duration: 2s;
 }
 .form{
     margin-left: 5%;
     display: flex;
     justify-content: space-around;
+    animation-name: onload;
+    animation-duration: 2s;
 }
 .perso-info{
     display:flex;
@@ -53,8 +70,34 @@ label{
     display: inline-block;
     margin-left: 30%;
 }
+
+.p{
+    text-align: center;
+    justify-content: flex-start;
+    animation-name: onload;
+    animation-duration: 2s;
+    margin-top:10%;
+
+}
 .validated{
     display:flex;
     flex-direction: column;
     margin-top: 20%;
 }
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes onload {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }

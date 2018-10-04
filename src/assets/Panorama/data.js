@@ -44,14 +44,8 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 1.4877649387571728,
-          "pitch": -0.07543596382073048,
-          "title": "Entrée extérieure",
-          "text": ""
-        },
-        {
-          "yaw": 2.288380611828096,
-          "pitch": -0.05984342142048149,
+          "yaw": 2.211450680829551,
+          "pitch": 0.08348946835175752,
           "title": "Batiment Apothicaire",
           "text": "<span style=\"color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; background-color: rgb(255, 255, 255);\">437 Avenue des Apothicaires, 34090 Montpellier</span>"
         }
@@ -93,14 +87,7 @@ var APP_DATA = {
           "target": "4-hall-dentre-croix-verte"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 2.2897167461081436,
-          "pitch": -0.058992702490265,
-          "title": "Hall d'entrée",
-          "text": ""
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "2-extrieur-btiment-croix-verte",
@@ -144,20 +131,7 @@ var APP_DATA = {
           "target": "0-parking-croix-verte"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": -1.4165731036679219,
-          "pitch": -0.027471683355766885,
-          "title": "Parking",
-          "text": ""
-        },
-        {
-          "yaw": 0.10824958695186915,
-          "pitch": 0.0002884884254470421,
-          "title": "Hall d'entrée",
-          "text": ""
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "3-caftria",
@@ -196,12 +170,6 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
-        {
-          "yaw": -1.2598255555722204,
-          "pitch": 0.11447469534811461,
-          "title": "Hall d'entrée",
-          "text": ""
-        },
         {
           "yaw": -2.274708451325912,
           "pitch": 0.0955670220965672,
@@ -246,8 +214,8 @@ var APP_DATA = {
           "target": "3-caftria"
         },
         {
-          "yaw": -1.36612379245717,
-          "pitch": 0.11010810395521098,
+          "yaw": -1.3661237845894636,
+          "pitch": 0.11010811194278602,
           "rotation": 0.7853981633974483,
           "target": "1-salle-de-cours"
         },
@@ -258,26 +226,7 @@ var APP_DATA = {
           "target": "2-extrieur-btiment-croix-verte"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 1.846289588831425,
-          "pitch": 0.09797760182105186,
-          "title": "Cafétaria",
-          "text": ""
-        },
-        {
-          "yaw": 0.11235394066900284,
-          "pitch": 0.35397085852236465,
-          "title": "Extérieur",
-          "text": ""
-        },
-        {
-          "yaw": -1.348879712959329,
-          "pitch": 0.038089549692259084,
-          "title": "Salle de cours",
-          "text": ""
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "5-extrieur-btiment-apothicaire",
@@ -323,16 +272,10 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 2.3526467937903153,
-          "pitch": -0.05311244968975082,
+          "yaw": 2.315673688965804,
+          "pitch": -0.09153111088305899,
           "title": "Batiment Croix-Verte",
           "text": "1027 rue de la Croix-Verte, 34090 Montpellier"
-        },
-        {
-          "yaw": 0.08482705233432242,
-          "pitch": 0.0908026724526465,
-          "title": "Hall d'entrée",
-          "text": ""
         }
       ]
     },
@@ -384,26 +327,7 @@ var APP_DATA = {
           "target": "8-mydil"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": -1.4975745844763573,
-          "pitch": 0.08290142151948388,
-          "title": "Extérieur&nbsp;",
-          "text": ""
-        },
-        {
-          "yaw": 0.3189456751257431,
-          "pitch": -0.020717519438514742,
-          "title": "Administration",
-          "text": ""
-        },
-        {
-          "yaw": 1.7559164842053514,
-          "pitch": 0.1760150086240415,
-          "title": "MYDIL",
-          "text": ""
-        }
-      ]
+      "infoHotspots": []
     },
     {
       "id": "7-administration",
@@ -486,14 +410,7 @@ var APP_DATA = {
           "target": "6-intrieur-btiment-apothicaire"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 2.257656148585971,
-          "pitch": 0.12392515918682712,
-          "title": "Hall d'entrée",
-          "text": ""
-        }
-      ]
+      "infoHotspots": []
     }
   ],
   "name": "Project Title",

@@ -37,3 +37,8 @@ h1{
 .test{
     height: 100%;
 }
+
+.descriptionMYDIL{
+    text-align: left;
+    margin-left: 10%;
+}

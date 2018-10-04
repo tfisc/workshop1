@@ -19,19 +19,47 @@ pannellum.viewer('panorama', {
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
-    width="1000"
-    height="600"
+    width="1000px"
+    height="600px !important"
     src='../assets/Panorama/index.html'>
 </iframe>
-
+</div>
 <!--
 <script>
     document.getElementById("inlineFrameExample").src =getPathPanoramaByID();
 </script>-->
+<br>
 
-<div class="description">
+<div *ngIf = "!(retourneObjetListePiece(listePieces).piece === 'MYDIL') "  class="description">
     <p>{{retourneObjetListePiece(listePieces).description}}</p>
   </div>
 
+  <div *ngIf = "retourneObjetListePiece(listePieces).piece === 'MYDIL' " class="descriptionMYDIL">
+      <p>Un lieu où le savoir à la demande est à la portée de tous nos élèves et où le matériel modulable et high-tech est mis au service de l’expérimentation pédagogique.
+        <br><br>
+        Échanger, développer, accélérer, co-construire, favoriser l’émergence de projets innovants par un lieu de collaboration et de confrontation unique entre étudiants :
+        <br><br>
+        Espace, laboratoire dédié au codage, à l’innovation technologique.
+        <br><br> 
+        <ul>
+          <li>Lieu de rendez-vous pour les GEEK.<br></li>
+          <li>Lieu de formation et d’initiation aux outils informatiques et numériques.<br></li>
+          <li>Lieu de réflexion et d’expérimentation des nouveaux usages.<br></li>
+          <li>NAO, le robot humanoïde sur lequel vous inventez le compagnon de demain.<br></li>
+          <li>L’oculus rift et sa nouvelle forme d’immersion en 3D.<br></li>
+          <li>Les nouvelles technologies de réalité augmentée (hololens…).<br></li>
+          <li>L’impression 3D pour le prototypage.<br></li>
+          <li>Les objets connectés d’aujourd’hui, et surtout ceux de demain, bracelets, montres, balance tissu…<br></li>
+          <li>Les nouvelles interfaces homme/machine, comme le leap motion.<br></li>
+          <li>Les différentes formes de tablettes et Smartphones nécessaires au développement des applications du futur.<br></li>
+          <li>Les technologies de système embarqué (raspberry py, arduino…).<br></li>
+          <li>Les drônes et leurs nouvelles applications.<br></li>
+          <li>Des outils collaboratifs innovants comme la surface hub. <br></li>
+          <li>Et bien d’autres</li>
+        </ul>
+        <br>
+        </div>
+
+        
 
   </div>

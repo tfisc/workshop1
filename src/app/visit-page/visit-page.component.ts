@@ -16,42 +16,42 @@ export class VisitPageComponent implements OnInit {
       window.addEventListener('changeScene', (e)=> {
         console.log("e['detail'].scene.data.name : " + e['detail'].scene.data.name);
         switch (e['detail'].scene.data.name) {
-          case "salleDeCours":
+          case "Salle de cours":
            this.dataService.currentBuilding=0;
            this.dataService.currentX=1;
            this.dataService.currentY=4;
             break;
-            case "exterieurBatiment":
+            case "Extérieur bâtiment Croix-Verte":
            this.dataService.currentBuilding=0;
            this.dataService.currentX=0;
            this.dataService.currentY=0;
             break;
-            case "parking":
+            case "Parking Croix-Verte":
            this.dataService.currentBuilding=0;
            this.dataService.currentX=0;
            this.dataService.currentY=1;
             break;
-            case "Cafet":
+            case "Cafétéria":
            this.dataService.currentBuilding=0;
            this.dataService.currentX=-2;
            this.dataService.currentY=3;
             break;
-            case "hautEscalier":
+            case "Hall d'entrée Croix-Verte":
            this.dataService.currentBuilding=0;
            this.dataService.currentX=0;
            this.dataService.currentY=2;
             break;
-            case "exterieurBatimentApoth":
+            case "Extérieur bâtiment Apothicaire":
             this.dataService.currentBuilding=1;
             this.dataService.currentX=0;
             this.dataService.currentY=0;
              break;
-             case "interieurBatimentApoth":
+             case "Intérieur bâtiment Apothicaire":
              this.dataService.currentBuilding=1;
              this.dataService.currentX=0;
              this.dataService.currentY=1;
               break;
-              case "administration":
+              case "Administration":
               this.dataService.currentBuilding=1;
               this.dataService.currentX=-1;
               this.dataService.currentY=1;
@@ -132,7 +132,7 @@ export class VisitPageComponent implements OnInit {
     },
     {
       'id': 6,
-      'piece': 'Cafétaria du batiment Croix-Verte',
+      'piece': 'Cafétéria du batiment Croix-Verte',
       'description': 'Nous voilà dans la cafétéria, c\'est ici que l\'on peut prendre un café le matin à la machine automatique ou bien se détendre autour d\'une partie de babyfoot. \r\n Des tables sont également présentes si l\'on souhaite travailler ici. \r\n Il y a aussi un point qui a son importance, nous avons ici un accès aux toilettes.',
       'building': 0,
       'coord_x': -2,

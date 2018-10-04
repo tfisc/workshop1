@@ -149,7 +149,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 8,
       'piece': 'Salle de cours Croix-Verte',
-      'description': 'Nous sommes ici dans l\'une des salles de cours de ce bâtiment. Vous pouvez justement nous apercevoir sur cette photo en train de travailler sur ce site internet ! {Rajouter ici les différents programme de l\'epsi ? http://www.epsi.fr/programmes/panorama-des-etudes/}',
+      'description': 'Nous sommes ici dans l\'une des salles de cours de ce bâtiment. Vous pouvez justement nous apercevoir sur cette photo en train de travailler sur ce site internet ! ',
       'building': 0,
       'coord_x': 1,
       'coord_y': 4
@@ -181,12 +181,14 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 12,
       'piece': 'MYDIL',
-      'description': 'MYDIL',
+      'description': '',
       'building': 1,
       'coord_x': 0,
       'coord_y': 2
     },
 
   ]
+
+  
 
 }

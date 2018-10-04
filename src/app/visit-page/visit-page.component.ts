@@ -157,7 +157,7 @@ export class VisitPageComponent implements OnInit {
     {
       'id': 9,
       'piece': 'Exterieur batiment apothicaire',
-      'description': 'Ce bâtiment est le principal du campus. Nous pourrons notamment y retrouver des salles de cours, le MyDIL ainsi que l\'adminitration.'
+      'description': 'Ce bâtiment est le principal du campus. Nous pourrons notamment y retrouver des salles de cours, le MyDIL ainsi que l\'adminitration.',
       'building': 1,
       'coord_x': 0,
       'coord_y': 0
